@@ -5,11 +5,21 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "tsc",
+    "test": "jest --config=jest.config.json",
+    "prepublish": "npm test"
   },
   "keywords": [],
-  "author": "",
+  "author": "Mark Wu",
   "license": "ISC",
-  "prepublish": "tsc"
+  "prepublish": "tsc",
+  "dependencies": {
+    "dataloader": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.5.3"
+  }
 }
